@@ -58,10 +58,8 @@ const SHOP_DATA = [
   {
     id: 1,
     title: "MDE FX PACK",
-    // NOTE POUR L'UTILISATEUR :
-    // Une fois en ligne, mettez votre fichier 'pack-fx.png' dans le dossier 'public' de votre projet
-    // et remplacez la ligne ci-dessous par : image: "/pack-fx.png"
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=80",
+    // ICI : Lien vers votre image locale (à mettre dans le dossier 'public')
+    image: "/pack-fx.png",
     description: "Le pack essentiel pour dynamiser vos montages. Transitions, effets et assets prêts à l'emploi pour donner un look unique à vos vidéos.",
     features: ["Drag & Drop Facile", "Compatible Premiere & AE", "Mise à jour à vie incluse"],
     link: "https://mickadeesoain.gumroad.com/l/rgysg"
@@ -359,9 +357,9 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
         <div className="w-full md:w-1/2 relative">
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl opacity-20 blur-xl"></div>
-          {/* REMPLACEZ CETTE URL par "/timeline.jpg" pour utiliser votre fichier local. */}
+          {/* ICI : Lien vers votre image locale dans le dossier 'public' */}
           <img 
-            src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1000&auto=format&fit=crop" 
+            src="/timeline.jpg" 
             alt="Interface de montage vidéo Timeline" 
             className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3] bg-slate-800"
           />
