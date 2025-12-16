@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, ExternalLink, Mail, Github, Linkedin, ChevronDown, Menu, X, Video, ShoppingBag, CreditCard, Check, Lock, Youtube, AlertTriangle, Instagram } from 'lucide-react';
+import { Play, Pause, ExternalLink, Mail, Github, Linkedin, ChevronDown, Menu, X, Video, ShoppingBag, CreditCard, Check, Lock, Youtube, AlertTriangle, Instagram, Calendar } from 'lucide-react';
 
 // --- Données ---
 const PROJECT_DATA = [
@@ -62,7 +62,8 @@ const SHOP_DATA = [
     image: "/pack-fx.png",
     description: "Le pack essentiel pour dynamiser vos montages. Transitions, effets et assets prêts à l'emploi pour donner un look unique à vos vidéos.",
     features: ["Drag & Drop Facile", "Compatible Premiere & AE", "Mise à jour à vie incluse"],
-    link: "https://mickadeesoain.gumroad.com/l/rgysg"
+    link: "https://mickadeesoain.gumroad.com/l/rgysg", 
+    cta: "Acheter sur Gumroad"
   }
 ];
 
@@ -156,7 +157,7 @@ const Hero = () => {
           </a>
           <a href="#shop" className="px-8 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-all flex items-center justify-center gap-2">
             <ShoppingBag size={20} />
-            Mon Pack FX
+            Mon Pack
           </a>
         </div>
       </div>
@@ -275,7 +276,7 @@ const Shop = () => {
             <h3 className="text-3xl md:text-5xl font-bold text-white">Ressources pour Monteurs</h3>
           </div>
           <p className="text-slate-400 max-w-md mt-4 md:mt-0 text-right md:text-left">
-            Mon pack d'effets et assets personnels pour améliorer vos productions.
+            Mes packs d'effets et assets personnels pour améliorer vos productions.
           </p>
         </div>
 
