@@ -277,7 +277,7 @@ const Shop = () => {
             <h3 className="text-3xl md:text-5xl font-bold text-white">Ressources pour Monteurs</h3>
           </div>
           <p className="text-slate-400 max-w-md mt-4 md:mt-0 text-right md:text-left">
-            Mes packs d'effets et assets personnels pour améliorer vos productions.
+            Mon pack d'effet et assets personnels pour améliorer vos productions.
           </p>
         </div>
 
