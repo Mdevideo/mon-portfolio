@@ -8,8 +8,9 @@ const PROJECT_DATA = [
     title: "Vlog Cannes - La Menace",
     category: "Vlog / Lifestyle",
     description: "Retraçant son séjour à Cannes. Un rythme dynamique, une narration fluide et des choix musicaux en accord avec l’ambiance du voyage.",
-    youtubeId: "3GBq70s8wvU",
-    thumbnail: "https://img.youtube.com/vi/3GBq70s8wvU/maxresdefault.jpg"
+    // ID de la nouvelle vidéo (PzXfGLcZ8NE)
+    youtubeId: "PzXfGLcZ8NE",
+    thumbnail: "https://img.youtube.com/vi/PzXfGLcZ8NE/maxresdefault.jpg"
   },
   {
     id: 2,
@@ -276,7 +277,7 @@ const Shop = () => {
             <h3 className="text-3xl md:text-5xl font-bold text-white">Ressources pour Monteurs</h3>
           </div>
           <p className="text-slate-400 max-w-md mt-4 md:mt-0 text-right md:text-left">
-            Mon pack d'effets et assets personnels pour améliorer vos productions.
+            Mes packs d'effets et assets personnels pour améliorer vos productions.
           </p>
         </div>
 
@@ -316,7 +317,7 @@ const Shop = () => {
                     rel="noopener noreferrer"
                     className="flex-1 bg-white text-slate-900 font-bold py-4 px-6 rounded-xl hover:bg-blue-50 transition-colors flex justify-center items-center gap-2 shadow-lg shadow-white/5"
                   >
-                    <ShoppingBag size={18} /> Voir sur Gumroad
+                    <ShoppingBag size={18} /> {item.cta}
                   </a>
                 </div>
               </div>
