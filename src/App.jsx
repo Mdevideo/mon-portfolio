@@ -8,7 +8,6 @@ const PROJECT_DATA = [
     title: "Vlog Cannes - La Menace",
     category: "Vlog / Lifestyle",
     description: "Retraçant son séjour à Cannes. Un rythme dynamique, une narration fluide et des choix musicaux en accord avec l’ambiance du voyage.",
-    // ID de la nouvelle vidéo (PzXfGLcZ8NE)
     youtubeId: "PzXfGLcZ8NE",
     thumbnail: "https://img.youtube.com/vi/PzXfGLcZ8NE/maxresdefault.jpg"
   },
@@ -59,7 +58,6 @@ const SHOP_DATA = [
   {
     id: 1,
     title: "MDE FX PACK",
-    // ICI : Lien vers votre image locale (à mettre dans le dossier 'public')
     image: "/pack-fx.png",
     description: "Le pack essentiel pour dynamiser vos montages. Transitions, effets et assets prêts à l'emploi pour donner un look unique à vos vidéos.",
     features: ["Drag & Drop Facile", "Compatible Premiere & AE", "Mise à jour à vie incluse"],
@@ -131,32 +129,56 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-slate-950">
-        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-950">
+      {/* Styles d'animation intégrés */}
+      <style>{`
+        @keyframes blob {
+          0% { transform: translate(0px, 0px) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+          100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+          animation: blob 10s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      `}</style>
+
+      {/* Fond Animé avec Grille */}
+      <div className="absolute inset-0 w-full h-full">
+        {/* Grille technique en fond */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        
+        {/* Blobs animés - Correction : suppression de mix-blend-multiply pour la visibilité sur fond sombre */}
+        <div className="absolute top-0 -left-4 w-96 h-96 bg-purple-500 rounded-full filter blur-[128px] opacity-30 animate-blob"></div>
+        <div className="absolute top-0 -right-4 w-96 h-96 bg-blue-500 rounded-full filter blur-[128px] opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-32 left-20 w-96 h-96 bg-indigo-500 rounded-full filter blur-[128px] opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-16">
-        <div className="inline-flex items-center px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 mb-6 backdrop-blur-sm">
+        <div className="inline-flex items-center px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 mb-6 backdrop-blur-sm shadow-lg">
           <span className="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
           <span className="text-xs text-slate-300 uppercase tracking-widest font-semibold">Disponible pour vos projets</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
           Donner vie au récit <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">par le montage.</span>
         </h1>
-        <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+        <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto drop-shadow-md">
           Monteur vidéo créatif. Je transforme vos rushs en histoires percutantes.
           Spécialisé dans le format YouTube, la publicité et le storytelling.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#portfolio" className="px-8 py-4 bg-white text-slate-900 rounded-full font-bold hover:bg-slate-200 transition-all flex items-center justify-center gap-2">
+          <a href="#portfolio" className="px-8 py-4 bg-white text-slate-900 rounded-full font-bold hover:bg-slate-200 transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-white/20">
             <Play size={20} fill="currentColor" />
             Voir mes montages
           </a>
-          <a href="#shop" className="px-8 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-all flex items-center justify-center gap-2">
+          <a href="#shop" className="px-8 py-4 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-blue-600/20">
             <ShoppingBag size={20} />
             Mon Pack
           </a>
