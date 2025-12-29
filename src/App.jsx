@@ -58,6 +58,7 @@ const SHOP_DATA = [
   {
     id: 1,
     title: "MDE FX PACK",
+    // ICI : Lien vers votre image locale (à mettre dans le dossier 'public')
     image: "/pack-fx.png",
     description: "Le pack essentiel pour dynamiser vos montages. Transitions, effets et assets prêts à l'emploi pour donner un look unique à vos vidéos.",
     features: ["Drag & Drop Facile", "Compatible Premiere & AE", "Mise à jour à vie incluse"],
@@ -432,7 +433,7 @@ const Contact = () => {
         
         <div className="flex flex-col md:flex-row justify-center gap-6 mb-16">
           <button 
-            onClick={() => window.open('mailto:votre-email@exemple.com')}
+            onClick={() => window.open('mailto:micka.deesoain@gmail.com')}
             className="group flex items-center justify-center gap-3 px-8 py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all hover:-translate-y-1 cursor-pointer"
           >
             <Mail size={20} />
