@@ -34,15 +34,15 @@ const PROJECT_DATA = [
     category: "Publicité / Sport",
     description: "Vidéos pour MyFitRace. Pensées pour capter l'attention et transmettre une expertise claire sur la nutrition et le sport.",
     youtubeId: "Yclwv9gI5bg",
-    thumbnail: "https://img.youtube.com/viaYclwv9gI5bg//maxresdefault.jpg"
+    thumbnail: "https://img.youtube.com/vi/Yclwv9gI5bg//maxresdefault.jpg"
   },
   {
     id: 5,
-    title: "Intro YouTube - Introspection",
-    category: "Montage / Storytelling",
-    description: "Intro dynamique et impactante expliquant comment transmettre un message fort.",
-    youtubeId: "25IcyMAkNsU",
-    thumbnail: "https://img.youtube.com/vi/25IcyMAkNsU/maxresdefault.jpg"
+    title: "Ads - MyFitRace",
+    category: "Publicité / Sport",
+    description: "Vidéos pour MyFitRace. Pensées pour capter l'attention et transmettre une expertise claire sur la nutrition et le sport.",
+    youtubeId: "SWXWcZ-Dm9Y,
+    thumbnail: "https://img.youtube.com/vi/SWXWcZ-Dm9Y/maxresdefault.jpg"
   },
   {
     id: 6,
