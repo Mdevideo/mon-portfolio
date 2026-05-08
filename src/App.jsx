@@ -30,11 +30,11 @@ const PROJECT_DATA = [
   },
   {
     id: 4,
-    title: "Publicité - MyFitRace",
+    title: "Ads - MyFitRace",
     category: "Publicité / Sport",
     description: "Vidéos pour MyFitRace. Pensées pour capter l'attention et transmettre une expertise claire sur la nutrition et le sport.",
-    youtubeId: "ajYWke0xkjc",
-    thumbnail: "https://img.youtube.com/vi/ajYWke0xkjc/maxresdefault.jpg"
+    youtubeId: "Yclwv9gI5bg",
+    thumbnail: "https://img.youtube.com/viaYclwv9gI5bg//maxresdefault.jpg"
   },
   {
     id: 5,
